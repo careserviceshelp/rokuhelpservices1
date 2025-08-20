@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roku TV Support - Independent Technical Support Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #662d91;
+            text-decoration: none;
+        }
+
+        .phone-header {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .phone-header:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            padding: 4rem 0;
+            text-align: center;
+            color: white;
+            margin: 2rem 0;
+            border-radius: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4);
+        }
+
+        .services {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 4rem 0;
+            margin: 2rem 0;
+            border-radius: 20px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: #662d91;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem 0;
+            margin: 2rem 0;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .phone-number {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .phone-number:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 2rem;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .disclaimer {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .header-content {
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Roku TV Support</a>
+                <a href="tel:+18443149096" class="phone-header">📞 Call Now: +1(844) 314-9096</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Professional Roku TV Support Services</h1>
+            <p>Expert technical assistance for all your Roku TV Support needs</p>
+            <a href="tel:+18443149096" class="cta-button">Get Instant Support</a>
+            <a href="#services" class="cta-button">View Our Services</a>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h2 style="text-align: center; color: #662d91; margin-bottom: 1rem;">Our Roku TV Support Services</h2>
+                <p style="text-align: center; margin-bottom: 2rem;">Professional Roku TV Support solutions tailored to your needs</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">📺</div>
+                        <h3>Roku TV Setup & Installation</h3>
+                        <p>Complete Roku TV Support for device setup, channel installation, and initial configuration. Our Roku TV Support experts will get your device running smoothly.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>Technical Troubleshooting</h3>
+                        <p>Comprehensive Roku TV Support for connectivity issues, streaming problems, and performance optimization. Expert Roku TV Support technicians available 24/7.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">📶</div>
+                        <h3>Network & Connectivity</h3>
+                        <p>Professional Roku TV Support for WiFi setup, network troubleshooting, and streaming quality issues. Reliable Roku TV Support solutions.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">🎬</div>
+                        <h3>Channel & App Support</h3>
+                        <p>Expert Roku TV Support for channel installation, app troubleshooting, and subscription management. Complete Roku TV Support services.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">🔐</div>
+                        <h3>Account & Security</h3>
+                        <p>Secure Roku TV Support for account setup, password recovery, and privacy settings. Trusted Roku TV Support professionals.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>Performance Optimization</h3>
+                        <p>Advanced Roku TV Support for device optimization, cache clearing, and software updates. Premium Roku TV Support services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2 style="color: #662d91; margin-bottom: 1rem;">Need Roku TV Support? We're Here to Help!</h2>
+            <p>Contact our expert Roku TV Support team for immediate assistance</p>
+            <div class="contact-info">
+                <a href="tel:+18443149096" class="phone-number">📞 +1(844) 314-9096</a>
+            </div>
+            <p style="margin-top: 1rem; color: #666;">Call now for professional Roku TV Support - Available 24/7</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="disclaimer">
+                <h3 style="color: #fff; margin-bottom: 1rem;">Important Disclaimer</h3>
+                <p><strong>We are an Independent Support Provider.</strong> This website and our services are not affiliated with, endorsed by, or sponsored by Roku Inc. or any of its subsidiaries. Roku TV Support services provided here are independent technical support services. All trademarks, service marks, trade names, trade dress, product names and logos appearing on this website are the property of their respective owners. We provide third-party technical support for Roku devices and are not an official Roku support service. For official Roku support, please visit the official Roku website.</p>
+            </div>
+            
+            <div class="footer-content">
+                <p>&copy; 2024 Independent Roku TV Support Services. All rights reserved.</p>
+                <p style="margin-top: 1rem;">Professional Roku TV Support | Call +1(844) 314-9096</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
